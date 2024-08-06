@@ -1,7 +1,7 @@
 ## The below lines of code take an invertible matrix and return its inverse
 
 ## The function below sets x as the matrix and the i to NULL. It also defines 4 functions, all of which can be invoked to set objects to variables. It returns a list of functions and the retained 
-$$ variables initialized within its environment
+## variables initialized within its environment
 
 makeCacheMatrix <- function(x = matrix()) {
         i <- NULL

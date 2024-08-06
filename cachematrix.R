@@ -1,7 +1,7 @@
-## Put comments here that give an overall description of what your
-## functions do
+## The below lines of code take an invertible matrix and return its inverse
 
-## Write a short comment describing this function
+## The function below sets x as the matrix and the i to NULL. It also defines 4 functions, all of which can be invoked to set objects to variables. It returns a list of functions and the retained 
+$$ variables initialized within its environment
 
 makeCacheMatrix <- function(x = matrix()) {
         i <- NULL
@@ -19,7 +19,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## The function below takes the list from the output of the above function and checks if i, the variable that represents the inverted matrix, is NULL. If it isn't NULL, which implies the inverted matrix has already
+## been calculated, the function will retrieve the cached matrix. If it is NULL, then it will retrieve the matrix set in the makeCacheMatrix function and calculates and returns the inverted matrix
 
 cacheSolve <- function(x, ...) {
         i <- x$getinvert()
